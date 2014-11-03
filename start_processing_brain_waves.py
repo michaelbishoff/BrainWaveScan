@@ -7,17 +7,8 @@ def main():
 
 	child_pid = proc.pid
 
-	(output, error) = proc.communicate()
-
-	if error:
-		print "Error:", error
-
-	print "Output:", output
-
-	#sleep(1)
-	print child_pid
+	time.sleep(1)
 	proc.terminate()
-	print child_pid
 
 
 
